@@ -23,7 +23,7 @@ my_stock           /my_stock     erofs    ro  wait,slotselect,logical,first_stag
 my_preload         /my_preload   erofs    ro  wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey,nofail
 my_bigball         /my_bigball   erofs       ro  wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey,nofail
 my_manifest        /my_manifest  erofs    ro  wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey,nofail
-/dev/block/sda17 on /metadata type ext4 (rw,seclabel,nosuid,nodev,noatime,discard,data=ordered)
-/dev/block/dm-0 on /data type ext4 (rw,seclabel,nosuid,nodev,noatime,discard,noauto_da_alloc,inlinecrypt,resgid=1065,data=ordered)
-/dev/block/sde4 on /firmware type vfat (ro,relatime,fmask=0000,dmask=0000,allow_utime=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
-/dev/block/dm-0 on /sdcard type ext4 (rw,seclabel,nosuid,nodev,noatime,discard,noauto_da_alloc,inlinecrypt,resgid=1065,data=ordered)
+/dev/block/sda17  /metadata type ext4 (rw,seclabel,nosuid,nodev,noatime,discard,data=ordered)
+/dev/block/dm-0  /data type ext4 (rw,seclabel,nosuid,nodev,noatime,discard,noauto_da_alloc,inlinecrypt,resgid=1065,data=ordered)
+/dev/block/sde4  /firmware type vfat (ro,relatime,fmask=0000,dmask=0000,allow_utime=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
+/dev/block/dm-0  /sdcard type ext4 (rw,seclabel,nosuid,nodev,noatime,discard,noauto_da_alloc,inlinecrypt,resgid=1065,data=ordered)
